@@ -1,0 +1,191 @@
+/* ============================================
+   Marginalia - Global Styles
+   2003 Web Aesthetic: Ethereal Palette
+   ============================================ */
+
+/* --- CSS Custom Properties --- */
+:root {
+	/* Ethereal Palette - soft purples, teals, cream */
+	--color-bg: #1a1520;
+	--color-bg-light: #2a2235;
+	--color-surface: #332b40;
+	--color-surface-raised: #3d3450;
+	--color-border: #5a4d6e;
+	--color-border-light: #7a6d8e;
+
+	/* Text colors */
+	--color-text: #d4cce0;
+	--color-text-dim: #9a8fb0;
+	--color-text-bright: #f0e8ff;
+	--color-text-accent: #c8b0ff;
+
+	/* Accent colors */
+	--color-purple: #9b7fd4;
+	--color-purple-dim: #6b5a9e;
+	--color-teal: #5fb8a0;
+	--color-teal-dim: #3d8a74;
+	--color-cream: #f0e6d0;
+	--color-cream-dim: #c8bfa8;
+	--color-ink: #3a2860;
+	--color-imagination: #d4a0ff;
+	--color-words: #80d0c0;
+
+	/* UI colors */
+	--color-button-bg: #3d3450;
+	--color-button-hover: #5a4d6e;
+	--color-button-active: #7a6d8e;
+	--color-tooltip-bg: #1a1520;
+	--color-highlight: #c8b0ff;
+
+	/* Spacing (px only - 2003 aesthetic) */
+	--space-xs: 2px;
+	--space-sm: 4px;
+	--space-md: 8px;
+	--space-lg: 16px;
+	--space-xl: 24px;
+	--space-xxl: 32px;
+
+	/* Fonts */
+	--font-pixel: 'Press Start 2P', 'Courier New', monospace;
+	--font-body: 'Courier New', 'Lucida Console', monospace;
+	--font-size-xs: 8px;
+	--font-size-sm: 10px;
+	--font-size-md: 12px;
+	--font-size-lg: 14px;
+	--font-size-xl: 16px;
+
+	/* Borders - hard pixel style, no border-radius */
+	--border: 1px solid var(--color-border);
+	--border-light: 1px solid var(--color-border-light);
+	--border-accent: 1px solid var(--color-purple);
+
+	/* Shadows - hard pixel shadows, no blur */
+	--shadow-sm: 2px 2px 0px #0a0810;
+	--shadow-md: 3px 3px 0px #0a0810;
+	--shadow-lg: 4px 4px 0px #0a0810;
+	--shadow-inset: inset 1px 1px 0px #0a0810;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-body);
+	font-size: var(--font-size-md);
+	line-height: 1.6;
+	image-rendering: pixelated;
+}
+
+body {
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+#app {
+	min-height: 100vh;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4 {
+	font-family: var(--font-pixel);
+	color: var(--color-text-bright);
+	letter-spacing: 1px;
+}
+
+h1 { font-size: var(--font-size-xl); }
+h2 { font-size: var(--font-size-lg); }
+h3 { font-size: var(--font-size-md); }
+
+a {
+	color: var(--color-teal);
+	text-decoration: underline;
+}
+
+a:hover {
+	color: var(--color-cream);
+	background-color: var(--color-teal-dim);
+}
+
+/* --- Buttons (2003 style) --- */
+button {
+	font-family: var(--font-pixel);
+	font-size: var(--font-size-sm);
+	color: var(--color-text);
+	background-color: var(--color-button-bg);
+	border: var(--border);
+	padding: var(--space-md) var(--space-lg);
+	cursor: pointer;
+	box-shadow: var(--shadow-sm);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+button:hover {
+	background-color: var(--color-button-hover);
+	color: var(--color-text-bright);
+}
+
+button:active {
+	background-color: var(--color-button-active);
+	box-shadow: var(--shadow-inset);
+	transform: translate(1px, 1px);
+}
+
+button:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+/* --- Scrollbar (period-appropriate) --- */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-bg);
+	border-left: var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-surface-raised);
+	border: var(--border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-border);
+}
+
+/* --- Utility Classes --- */
+.pixel-border {
+	border: var(--border);
+	box-shadow: var(--shadow-sm);
+}
+
+.panel {
+	background-color: var(--color-surface);
+	border: var(--border);
+	box-shadow: var(--shadow-md);
+	padding: var(--space-lg);
+}
+
+.glow-text {
+	color: var(--color-text-accent);
+	text-shadow: 0 0 4px var(--color-purple-dim);
+}
+
+/* --- Cursor (2003 aesthetic) --- */
+body {
+	cursor: default;
+}
+
+button, a, [role="button"] {
+	cursor: pointer;
+}
