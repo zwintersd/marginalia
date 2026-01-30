@@ -1,0 +1,182 @@
+ID,Category,Subcategory,Asset Name,Description,States/Variants,Priority,Status,Dependencies,Notes
+,,,,,,,,
+,WITCH'S STUDY,,,,,,,
+WS-001,Witch's Study,Character,Witch Portrait - Idle,Default state sitting at desk with book closed,1,1,Not Started,,Soft lighting. Cozy melancholy. This is Brianna at rest.
+WS-002,Witch's Study,Character,Witch Portrait - Writing,Engaged with open book - pen moving,1,1,Not Started,WS-001,Slight lean forward. The author at work.
+WS-003,Witch's Study,Character,Witch Portrait - Contemplating,Looking up/away from book - thinking,1,2,Not Started,WS-001,Between actions. Wondering.
+WS-004,Witch's Study,Character,Witch Portrait - Reacting (High Favor),Response to good discoveries/world thriving,3 variants (wonder/delight/tender),2,Not Started,WS-001,Warm expressions. Connection.
+WS-005,Witch's Study,Character,Witch Portrait - Reacting (Low Favor),Response to forced growth/world struggling,2 variants (concern/distant),2,Not Started,WS-001,Cooler expressions. The cost showing.
+WS-006,Witch's Study,Environment,Study Background,The room - desk/shelves/window to her planet,1,1,Not Started,,Frame for everything. Lived-in but lonely.
+WS-007,Witch's Study,Environment,Window View - Barren,Her planet before any meta-progress,1,2,Not Started,WS-006,Stark but not ugly. Potential.
+WS-008,Witch's Study,Environment,Window View - Growing,Planet showing life from meta-progress,4-5 stages,3,Not Started,WS-007,Overlays/additions. Visual proof she's done something.
+WS-009,Witch's Study,Object,The Book - Closed,Creation tome on desk,1,1,Not Started,,Ancient and powerful but personal. Well-worn.
+WS-010,Witch's Study,Object,The Book - Open Idle,Open but world not active,1,1,Not Started,WS-009,Pages visible. Waiting.
+WS-011,Witch's Study,Object,Candles/Light Sources,Ambient magical lighting,2-3 variants,3,Not Started,,Subtle motion if animated.
+WS-012,Witch's Study,Object,Bookshelf - Empty,Starting state for closed books,1,2,Not Started,,Where finished worlds live.
+WS-013,Witch's Study,Object,Bookshelf - Filling,Progressive states as worlds complete,3-4 stages,3,Not Started,WS-012,Visual meta-progress. Her library grows.
+WS-014,Witch's Study,Object,Writing Implements,Pen/quill and ink,1,2,Not Started,,Small but magical.
+WS-015,Witch's Study,Object,Essence Vessel,Shows current essence reserves,3 states (full/partial/low),1,Not Started,,The resource that lets her create.
+WS-016,Witch's Study,Object,Journal,Her personal observations - Favor reflection,1,2,Not Started,,Where her inner state lives. Could show wear based on Favor history.
+,,,,,,,,
+,TRANSITIONS,,,,,,,
+TR-001,Transitions,Animation,Book Opening Sequence,Study to world view transition,4-6 frames,1,Not Started,WS-009 WS-010,Pages turn. Light emerges. Key moment.
+TR-002,Transitions,Animation,Book Closing Sequence,World view back to study,4-6 frames,2,Not Started,TR-001,World settles into pages.
+TR-003,Transitions,Animation,Discovery Moment,New emergence revealed,3-4 frames,1,Not Started,,Sparkle/glow. Text appearing. Satisfying.
+TR-004,Transitions,Animation,Page Turn,Between discovery pages,2-3 frames,2,Not Started,,Simple. Satisfying.
+TR-005,Transitions,Animation,Observation Stage Shift,Thing moves from Notice to Observe to Study to Know,2-3 frames,2,Not Started,,Visual feedback for attention investment.
+,,,,,,,,
+,THE WEB - TIER 1 CONDITIONS,,,,,,,
+W1-001,The Web,Condition Icon,Let There Be Flow,Cycles/currents/exchange,1,1,Not Started,,Abstract. Maybe water motif. First choice category.
+W1-002,The Web,Condition Icon,Let There Be Holding,Containment/accumulation/memory,1,1,Not Started,,Abstract. Maybe vessel/pool motif.
+W1-003,The Web,Condition Icon,Let There Be Falling,Gravity/gradients/tendency toward,1,1,Not Started,,Abstract. Maybe descent/slope motif.
+W1-004,The Web,Condition Icon,Let There Be Reaching,Growth/extension/hunger,1,1,Not Started,,Abstract. Maybe upward/outward motif.
+W1-005,The Web,Condition Icon,Let There Be Returning,Cycles/decay/nutrients back,1,1,Not Started,,Abstract. Maybe spiral/loop motif.
+W1-006,The Web,Condition Icon,Let There Be Boundary,Self/other/membranes,1,2,Not Started,,Abstract. Maybe edge/surface motif.
+W1-007,The Web,Condition Icon,Let There Be Change When Touched,Reactivity/sensitivity/response,1,2,Not Started,,Abstract. Maybe ripple/impact motif.
+W1-008,The Web,Condition Icon,Let There Be Repeating,Patterns/reproduction/rhythm,1,2,Not Started,,Abstract. Maybe echo/iteration motif.
+W1-009,The Web,Condition Icon,Locked Condition,Unavailable/undiscovered node,1,1,Not Started,,Greyed or obscured. Mystery.
+W1-010,The Web,Condition Icon,Condition - Active/Selected,Currently being written,1,1,Not Started,,Glowing or highlighted state.
+,,,,,,,,
+,THE WEB - TIER 2 EMERGENCES,,,,,,,
+W2-001,The Web,Emergence Icon,Metabolism,Flow + Holding,1,2,Not Started,W1-001 W1-002,Something that maintains itself through change.
+W2-002,The Web,Emergence Icon,Structure,Falling + Reaching,1,2,Not Started,W1-003 W1-004,Something that resists tendency.
+W2-003,The Web,Emergence Icon,Growth,Holding + Reaching,1,2,Not Started,W1-002 W1-004,Something that accumulates toward.
+W2-004,The Web,Emergence Icon,Life Cycle,Reaching + Returning,1,2,Not Started,W1-004 W1-005,Birth/death/continuation.
+W2-005,The Web,Emergence Icon,Weather,Returning + Flow,1,2,Not Started,W1-005 W1-001,Nutrient cycling. Atmosphere dynamics.
+W2-006,The Web,Emergence Icon,Sensation,Boundary + Change When Touched,1,2,Not Started,W1-006 W1-007,Nerves. Reflexes. Awareness begins.
+W2-007,The Web,Emergence Icon,Evolution,Repeating + Reaching,1,2,Not Started,W1-008 W1-004,Iteration toward. Improvement over time.
+W2-008,The Web,Emergence Icon,Emergence - Locked,Undiscovered combination,1,2,Not Started,,Shows that something exists but requirements unmet.
+,,,,,,,,
+,THE WEB - UI,,,,,,,
+WU-001,The Web,UI,Web Background,The space where nodes float,1,1,Not Started,,Dark but warm? Void but not empty. Constellation feeling.
+WU-002,The Web,UI,Web Connection Line,Links between nodes,2 states (active/dormant),1,Not Started,,Could be ink flourishes. Organic not mechanical.
+WU-003,The Web,UI,Web Connection - Emergence,Line that shows combination creating something,1,1,Not Started,WU-002,Highlighted/glowing version.
+WU-004,The Web,UI,Dimensional Shift Indicator,Shows nodes on different planes,1,3,Not Started,,For later worlds. Depth/parallax hint.
+WU-005,The Web,UI,Essence Cost Display,Shows cost of unlocking a condition,1,1,Not Started,,Integrated with node or separate.
+,,,,,,,,
+,WORLD VIEW - TERRAIN,,,,,,,
+WT-001,World View,Terrain,Ocean Tile - Deep,Saline sea base,2 variants,1,Not Started,,Most of map edge.
+WT-002,World View,Terrain,Ocean Tile - Shallow,Coastal waters,2 variants,1,Not Started,WT-001,Transition to shore.
+WT-003,World View,Terrain,Shore/Beach Tile,Where land meets sea,3 variants,1,Not Started,WT-002,Critical for early life.
+WT-004,World View,Terrain,Tidal Pool Tile,Biodiversity hotspot,2 variants,2,Not Started,WT-003,Special shore type.
+WT-005,World View,Terrain,Barren Land Tile,Starting continental surface,3 variants,1,Not Started,,Rock/dust. Pre-life. Waiting.
+WT-006,World View,Terrain,Fertile Soil Tile,Can support plant life,2 variants,1,Not Started,WT-005,Unlocked through conditions.
+WT-007,World View,Terrain,Freshwater Tile,Lakes/rivers,2 variants,2,Not Started,,Different from ocean.
+WT-008,World View,Terrain,Rocky/Mountain Tile,Elevation,2 variants,2,Not Started,WT-005,Geographic diversity.
+WT-009,World View,Terrain,Spring Tile,Freshwater emergence,1,2,Not Started,WT-007,Special freshwater source.
+,,,,,,,,
+,WORLD VIEW - ATMOSPHERE,,,,,,,
+WA-001,World View,Atmosphere,Sky - Primordial,Before stable atmosphere,1,1,Not Started,,Harsh/hazy. Alien.
+WA-002,World View,Atmosphere,Sky - Stable,After conditions develop,1,1,Not Started,WA-001,Familiar. Breathable feeling.
+WA-003,World View,Atmosphere,Cloud Layer,Weather visible,3 variants,2,Not Started,WA-002,Water cycle working.
+WA-004,World View,Atmosphere,Rain Effect,Precipitation,1,2,Not Started,WA-003,Particle or overlay.
+WA-005,World View,Atmosphere,Mist Effect,Coastal moisture,1,2,Not Started,,Microhabitat indicator.
+,,,,,,,,
+,WORLD VIEW - SPIRITS,,,,,,,
+SP-001,World View,Spirits,Spirit - Idle,Default Chao-like helper,1,1,Not Started,,Soft round body. Simple face. 2-3 colors. Core friend.
+SP-002,World View,Spirits,Spirit - Moving,Traveling across world,2-3 frames,1,Not Started,SP-001,Bobbing/floating.
+SP-003,World View,Spirits,Spirit - Tending,Intervention verb: plants,2 frames,1,Not Started,SP-001,Gentle garden energy.
+SP-004,World View,Spirits,Spirit - Guiding,Intervention verb: animals,2 frames,2,Not Started,SP-001,Shepherd energy.
+SP-005,World View,Spirits,Spirit - Encouraging,Intervention verb: ecosystems,2 frames,2,Not Started,SP-001,Soft supportive energy.
+SP-006,World View,Spirits,Spirit - Shaping,Intervention verb: geology,2 frames,2,Not Started,SP-001,Patient sculptor energy.
+SP-007,World View,Spirits,Spirit - Invoking,Intervention verb: weather,2 frames,3,Not Started,SP-001,Petitioner energy. Looking up.
+SP-008,World View,Spirits,Spirit - Witnessing,Intervention verb: social/ritual (late game),1,3,Not Started,SP-001,Still. Present. Sacred.
+SP-009,World View,Spirits,Spirit - Celebrating,Discovery/milestone reaction,2 frames,2,Not Started,SP-001,Joy! Bounce/sparkle.
+SP-010,World View,Spirits,Spirit - Tired,Low Favor or depleted,1,2,Not Started,SP-001,Not sad. Just... worn. Waiting.
+SP-011,World View,Spirits,Spirit - High Favor,Thriving world state,1,2,Not Started,SP-001,Extra glow? Brighter colors? Contentment.
+SP-012,World View,Spirits,Spirit - Cluster,Multiple spirits grouped,1,2,Not Started,SP-001,Population growth indicator.
+SP-013,World View,Spirits,Spirit Spawn Effect,New spirit appearing,2-3 frames,2,Not Started,SP-001,Magical pop-in.
+,,,,,,,,
+,WORLD VIEW - LIFE (BASE ASSETS FOR VARIATION),,,,,,,Note: These are bases. Color/size/detail variants multiply perceived abundance.
+WL-001,World View,Life - Aquatic,Algae Bloom Base,First photosynthesizer,2 base shapes,1,Not Started,,Green murk. Color variants = different species.
+WL-002,World View,Life - Aquatic,Kelp/Frond Base,Reaching aquatic plant,2 base shapes,1,Not Started,WL-001,Height/color variants.
+WL-003,World View,Life - Aquatic,Filter Feeder Base,Sessile sea life,2 base shapes,2,Not Started,,Shape/color variants.
+WL-004,World View,Life - Aquatic,Crawler Base,Early mobile grazer,2 base shapes,2,Not Started,,Shell shape/color variants.
+WL-005,World View,Life - Aquatic,Swimmer Base,Soft-bodied jellyfish-ish,2 base shapes,2,Not Started,,Size/translucency variants.
+WL-006,World View,Life - Terrestrial,Lichen Base,First land colonizer,2 base shapes,1,Not Started,,Color/spread pattern variants.
+WL-007,World View,Life - Terrestrial,Moss Base,Ground cover,2 base shapes,1,Not Started,,Color/density variants.
+WL-008,World View,Life - Terrestrial,Fungal Base,Underground network visible parts,3 base shapes,1,Not Started,,Cap shape/color/cluster variants.
+WL-009,World View,Life - Terrestrial,Fern Base,First reaching plants,2 base shapes,1,Not Started,,Frond shape/size variants.
+WL-010,World View,Life - Terrestrial,Liverwort Base,Flat wet-loving,1 base shape,2,Not Started,,Color variants.
+WL-011,World View,Life - Terrestrial,Flower Base,Later game - needs pollinators,4 base shapes,2,Not Started,,Petal count/color/size = many species.
+WL-012,World View,Life - Terrestrial,Tree Base,Complex reaching,3 base shapes,2,Not Started,,Leaf shape/height/fruit variants.
+WL-013,World View,Life - Terrestrial,Grass Base,Ground cover - later,2 base shapes,2,Not Started,,Color/density variants.
+WL-014,World View,Life - Terrestrial,Insect Base,First land arthropods,3 base shapes,2,Not Started,,Wing/color/size = many species.
+WL-015,World View,Life - Geological,Mineral Vein Base,Different ore types,3 base shapes,1,Not Started,,Color/pattern variants.
+WL-016,World View,Life - Geological,Crystal Formation Base,Special mineral,2 base shapes,2,Not Started,,Color/size variants.
+WL-017,World View,Life - Geological,Salt Deposit,Tidal edge formation,1,1,Not Started,,Crystalline.
+,,,,,,,,
+,OBSERVATION UI,,,,,,,
+OB-001,Observation,UI,Thing Card - Unnoticed,Before player has clicked,1,1,Not Started,,Greyed/hidden/silhouette.
+OB-002,Observation,UI,Thing Card - Noticed,Name visible but details hidden,1,1,Not Started,OB-001,Partial reveal.
+OB-003,Observation,UI,Thing Card - Observed,Description filling in,1,1,Not Started,OB-002,Behaviors starting to show.
+OB-004,Observation,UI,Thing Card - Studied,Metrics visible,1,1,Not Started,OB-003,Numbers/patterns clear.
+OB-005,Observation,UI,Thing Card - Known,Full information + intervention unlocked,1,1,Not Started,OB-004,Complete. Glowing edge?
+OB-006,Observation,UI,Observation Progress Bar,Attention investment visual,1,1,Not Started,,Fills as player watches.
+OB-007,Observation,UI,Insight Indicator,Current insight resource,1,1,Not Started,,How much understanding she has.
+OB-008,Observation,UI,Intervention Menu,Options when thing is Known,1,1,Not Started,OB-005,Tend/Guide/Encourage/etc based on domain.
+OB-009,Observation,UI,Intervention Cost Display,Insight/Essence cost,1,1,Not Started,OB-008,Clear before committing.
+,,,,,,,,
+,FAVOR UI,,,,,,,
+FV-001,Favor,UI,Favor Meter,Relationship with world,5+ states (gradient),1,Not Started,,Not binary. Spectrum.
+FV-002,Favor,UI,Favor Shift Indicator,When Favor changes,2 states (up/down),2,Not Started,FV-001,Feedback for player choices.
+FV-003,Favor,UI,High Favor World Overlay,Subtle visual shift when Favor high,1,3,Not Started,,Warmer? Brighter? More alive?
+FV-004,Favor,UI,Low Favor World Overlay,Subtle visual shift when Favor low,1,3,Not Started,,Cooler? Muted? Brittle feeling?
+,,,,,,,,
+,RESOURCE UI,,,,,,,
+RU-001,Resources,UI,Essence Counter,Meta resource display,1,1,Not Started,,Always visible.
+RU-002,Resources,UI,Insight Counter,World resource display,1,1,Not Started,,Understanding accumulated.
+RU-003,Resources,UI,Knowing Counter,Meta understanding display,1,2,Not Started,,Carried between worlds.
+RU-004,Resources,UI,World Metrics Panel,Nutrients/Oxygen/Stability/Complexity,1,2,Not Started,,Health indicators.
+RU-005,Resources,UI,Metric Bar Base,Reusable bar for metrics,2 states (healthy/struggling),1,Not Started,,Color-coded.
+,,,,,,,,
+,GENERAL UI,,,,,,,
+UI-001,UI,Frame,World View Frame,Book page border for world,1,1,Not Started,,Illustrated manuscript feeling.
+UI-002,UI,Frame,Web View Frame,Border for condition selection,1,1,Not Started,,Distinct from world. More abstract.
+UI-003,UI,Frame,Discovery Page Frame,Border for collected discoveries,1,1,Not Started,,Celebratory.
+UI-004,UI,Frame,Journal Frame,Border for Brianna's entries,1,2,Not Started,,Personal. Handwritten feeling.
+UI-005,UI,Button,Button Base,Standard clickable,2 states (default/hover),1,Not Started,,Consistent style.
+UI-006,UI,Button,Return to Study,Exit world view,2 states,1,Not Started,UI-005,
+UI-007,UI,Button,Open Web,Access condition selection,2 states,1,Not Started,UI-005,
+UI-008,UI,Button,View Journal,Access Brianna's entries,2 states,2,Not Started,UI-005,
+UI-009,UI,Button,View Discoveries,Access collection,2 states,1,Not Started,UI-005,
+UI-010,UI,Panel,Notification Panel,Discovery/event alerts,1,1,Not Started,,Things happening.
+UI-011,UI,Typography,Handwritten Font Sample,Her handwriting for journal/discoveries,1,1,Not Started,,Style reference.
+UI-012,UI,Typography,Scientific Font Sample,For species names/metrics,1,2,Not Started,,Scholarly but warm.
+,,,,,,,,
+,DISCOVERY PAGES,,,,,,,
+DP-001,Discoveries,Page,Discovery Page - First Life,Major milestone,1,1,Not Started,,This is huge. Art should reflect.
+DP-002,Discoveries,Page,Discovery Page - First Plant,Land colonization,1,2,Not Started,,
+DP-003,Discoveries,Page,Discovery Page - First Animal,Movement/intention,1,2,Not Started,,
+DP-004,Discoveries,Page,Discovery Page - Synergy Found,When player discovers combination,1,2,Not Started,,Template for various synergies.
+DP-005,Discoveries,Page,Discovery Page - Ladybug,The speedrun reward,1,3,Not Started,,Easter egg energy. She wanted this.
+DP-006,Discoveries,Page,Discovery Page Template,Base for generating many,1,2,Not Started,,Scientific illustration style.
+,,,,,,,,
+,BOOK COVERS,,,,,,,
+BC-001,Book Covers,Element,Cover Base - Neutral,Starting cover for new book,1,2,Not Started,,Before player customization.
+BC-002,Book Covers,Element,Cover Base - High Favor,Earned through kind play,1,3,Not Started,,Warmer/more ornate.
+BC-003,Book Covers,Element,Cover Base - Low Favor,Earned through extraction,1,3,Not Started,,Cooler/simpler/worn.
+BC-004,Book Covers,Element,Cover Sticker - Ladybug,Decorative element,1,3,Not Started,,Player earnable.
+BC-005,Book Covers,Element,Cover Sticker - First Life,Decorative element,1,3,Not Started,,Milestone marker.
+BC-006,Book Covers,Element,Cover Sticker - Flower,Decorative element,1,3,Not Started,,
+BC-007,Book Covers,Element,Cover Sticker - Spirit,Decorative element,1,3,Not Started,,
+BC-008,Book Covers,Element,Cover Spine,Visible on bookshelf,1,2,Not Started,,Each world identifiable on shelf.
+,,,,,,,,
+,META PROGRESS,,,,,,,
+MP-001,Meta Progress,Study,Planet Surface - Stage 1,First signs of life,1,3,Not Started,WS-007,Prestige reward.
+MP-002,Meta Progress,Study,Planet Surface - Stage 2,More developed,1,3,Not Started,MP-001,
+MP-003,Meta Progress,Study,Planet Surface - Stage 3,Thriving,1,3,Not Started,MP-002,Toward golden ending.
+MP-004,Meta Progress,Object,Knowing Visualization,Accumulated understanding,1,3,Not Started,,Maybe constellation/web in study?
+MP-005,Meta Progress,Object,Essence Vessel Upgrade,Increased capacity visual,2 stages,3,Not Started,WS-015,Gets bigger/glowier.
+,,,,,,,,
+,AUDIO PLACEHOLDER NOTES,,,,,,,
+AU-001,Audio,Note,Ambient - Study,Quiet/cozy room,n/a,3,Not Started,,Fire? Wind? Scratching pen?
+AU-002,Audio,Note,Ambient - World (Early),Sparse. Wind. Water.,n/a,3,Not Started,,Pre-life quiet.
+AU-003,Audio,Note,Ambient - World (Living),More complex. Life sounds.,n/a,3,Not Started,,Grows with complexity metric.
+AU-004,Audio,Note,SFX - Writing/Condition,Adding to the web,n/a,2,Not Started,,
+AU-005,Audio,Note,SFX - Discovery,Chime/sparkle,n/a,2,Not Started,,Satisfying unlock.
+AU-006,Audio,Note,SFX - Observation Complete,Thing becomes Known,n/a,2,Not Started,,Subtle. Rewarding.
+AU-007,Audio,Note,SFX - Intervention,Spirit acting,n/a,2,Not Started,,Different per verb?
+AU-008,Audio,Note,SFX - Favor Shift,Relationship change,n/a,3,Not Started,,Subtle. Not punishing.
+AU-009,Audio,Note,Music - Study Theme,Cozy melancholy,n/a,3,Not Started,,Brianna's loneliness/warmth.
+AU-010,Audio,Note,Music - World Theme,Wonder/growth,n/a,3,Not Started,,Life finding a way.
